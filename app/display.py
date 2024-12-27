@@ -1,7 +1,7 @@
-def display(self, display_type: str) -> None:
+def display(book, display_type: str) -> None:
     if display_type == "console":
-        print(self.content)
+        print(book.content)
     elif display_type == "reverse":
-        print(self.content[::-1])
+        print(book.content[::-1])
     else:
         raise ValueError(f"Unknown display type: {display_type}")
